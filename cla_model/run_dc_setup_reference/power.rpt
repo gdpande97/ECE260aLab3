@@ -1,0 +1,53 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : fir4rca
+Version: K-2015.06-SP2
+Date   : Sun Dec 12 08:16:24 2021
+****************************************
+
+
+Library(s) Used:
+
+    tcbn65gpluswc (File: /home/linux/ieng6/ee260afa21/public/lab3_setup/libraries/db/tcbn65gpluswc.db)
+
+
+Operating Conditions: WCCOM   Library: tcbn65gpluswc
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+fir4rca                ZeroWireload      tcbn65gpluswc
+
+
+Global Operating Voltage = 0.9  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =   1.4849 mW   (80%)
+  Net Switching Power  = 370.4122 uW   (20%)
+                         ---------
+Total Dynamic Power    =   1.8553 mW  (100%)
+
+Cell Leakage Power     =  26.7646 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           1.2554            0.1633        7.4072e+03            1.4261  (  75.78%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.2294            0.2071        1.9357e+04            0.4559  (  24.22%)
+--------------------------------------------------------------------------------------------------
+Total              1.4849 mW         0.3704 mW     2.6765e+04 nW         1.8820 mW
+1
